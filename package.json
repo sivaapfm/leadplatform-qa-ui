@@ -2,14 +2,45 @@
   "name": "leadplatform-qa-ui",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test --config=playwright.config.ts",
+    "test-ui-mode": "npx playwright test --ui",
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivaapfm/leadplatform-qa-ui.git"
+  },
   "keywords": [],
-  "author": "",
+  "author": "APFM - Automation Team",
   "license": "ISC",
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sivaapfm/leadplatform-qa-ui/issues"
+  },
+  "homepage": "https://github.com/sivaapfm/leadplatform-qa-ui#readme",
   "description": "",
+
+  "dependencies": {
+    "@aplaceformom/apfm-datetime": "^0.0.2",
+    "@aplaceformom/apfm-http-client": "^0.0.1",
+    "@aplaceformom/apfm-logger-frontend": "0.0.1",
+    "@aplaceformom/apfm-logger-typescript": "^0.0.4",
+    "@newrelic/native-metrics": "^11.0.0",
+    "axios": "^1.8.4",
+    "dotenv": "^10.0.0",
+    "graphql-request": "^7.1.2",
+    "newrelic": "^12.18.0"
+},
   "devDependencies": {
-    "@playwright/test": "^1.51.1",
-    "@types/node": "^22.14.1"
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.17",
+    "typescript": "^5.8.3"
   }
 }
+
+
+
+ 
